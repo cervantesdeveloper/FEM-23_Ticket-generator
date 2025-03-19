@@ -1,0 +1,19 @@
+@use "../base/variables" as v;
+
+.hero{
+    width: 100%;
+    color: v.$white;
+    text-align: center;
+
+    h2{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 1.125rem;
+        font-variation-settings: "wdth" 120;
+    }
+
+    p{
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+    }
+}
