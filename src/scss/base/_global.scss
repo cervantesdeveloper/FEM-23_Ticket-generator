@@ -1,0 +1,11 @@
+@use "variables" as v;
+
+@font-face{
+    font-family: "Inconsolata";
+    src: url(/Inconsolata-VariableFont_wdth,wght.ttf);
+}
+
+h1{
+    font-family: "Inconsolata";
+    font-weight: 200;
+}
