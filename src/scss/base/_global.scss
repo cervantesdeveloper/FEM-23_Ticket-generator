@@ -5,7 +5,37 @@
     src: url(/Inconsolata-VariableFont_wdth,wght.ttf);
 }
 
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: inherit;
+}
+
 h1{
     font-family: "Inconsolata";
     font-weight: 200;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url(/public/pattern-lines.svg), url(/public/background-mobile.png);
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+
+    @media (min-width: 768px) {
+        background-image: url(/public/pattern-lines.svg), url(/public/background-tablet.png);
+    }
+
+    @media (min-width: 1440px) {
+        background-image: url(/public/pattern-lines.svg), url(/public/background-desktop.png);
+    }
 }
